@@ -1,0 +1,5 @@
+<h1 style = text-align:center> [윤형이의 페이지] </h1>
+<h2> <a href= "/posts/new"> 새글 작성하기 </a></h2>
+<% @posts.each do |post| %>
+    <h3><a href= "/posts/show/<%= post.id %>"><%= post.id %> : <%= post.title %></a></h3>
+<% end %>
